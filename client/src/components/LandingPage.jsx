@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, ArrowRight, Sparkles, MessageSquareWarning, ShieldAlert, CheckCircle, HelpCircle, Mic, MicOff, Volume2 } from 'lucide-react';
+import { ShieldCheck, ArrowRight, Sparkles, MessageSquareWarning, ShieldAlert, CheckCircle, HelpCircle, Mic, MicOff } from 'lucide-react';
 
 export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) {
   const [text, setText] = useState('');
@@ -187,25 +187,25 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
     <div className="max-w-4xl mx-auto w-full px-4 sm:px-6 pt-6 sm:pt-10 pb-12 animate-fadeIn">
       {/* Hero Section */}
       <div className="text-center space-y-4 mb-8 sm:mb-10">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-trust-50 border border-trust-200 text-trust-800 text-xs sm:text-sm font-bold shadow-sm">
-          <ShieldCheck className="w-4 h-4 text-trust-600" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-trust-50 dark:bg-trust-900/40 border border-trust-200 dark:border-trust-800 text-trust-800 dark:text-trust-300 text-xs sm:text-sm font-bold shadow-sm">
+          <ShieldCheck className="w-4 h-4 text-trust-600 dark:text-trust-400" />
           <span>{labels.badge[language]}</span>
         </div>
 
-        <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
           {labels.heroTitle1[language]} <br className="hidden sm:inline" />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-600 via-trust-700 to-amber-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-600 via-trust-700 to-amber-600 dark:from-trust-400 dark:via-trust-500 dark:to-amber-400">
             {labels.heroTitle2[language]}
           </span>
         </h1>
 
-        <p className="max-w-2xl mx-auto text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+        <p className="max-w-2xl mx-auto text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
           {labels.heroSubtitle[language]}
         </p>
       </div>
 
       {/* Input Box & Voice Button */}
-      <div className="bg-white rounded-2xl shadow-xl border border-slate-200/80 p-4 sm:p-6 mb-8 transition-all hover:shadow-2xl">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-xl border border-slate-200/80 dark:border-slate-800 p-4 sm:p-6 mb-8 transition-all hover:shadow-2xl">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="relative">
             <textarea
@@ -214,18 +214,18 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
               placeholder={labels.inputPlaceholder[language]}
               rows={4}
               disabled={loading}
-              className={`w-full p-4 pb-12 rounded-xl border-2 transition-colors text-slate-800 placeholder:text-slate-400 text-sm sm:text-base focus:outline-none resize-none ${
+              className={`w-full p-4 pb-12 rounded-xl border-2 transition-colors text-slate-800 dark:text-slate-100 placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base focus:outline-none resize-none ${
                 isListening 
-                  ? 'border-rose-500 bg-rose-50/30' 
-                  : 'border-slate-200 focus:border-trust-600 focus:bg-slate-50/50'
+                  ? 'border-rose-500 bg-rose-50/30 dark:bg-rose-950/30' 
+                  : 'border-slate-200 dark:border-slate-700 focus:border-trust-600 dark:focus:border-trust-500 focus:bg-slate-50/50 dark:focus:bg-slate-800/50 bg-white dark:bg-slate-800/40'
               }`}
             />
 
             {/* Voice Input Microphone Button inside bottom-right of textarea */}
             <div className="absolute bottom-3 right-3 flex items-center gap-2">
               {isListening && (
-                <span className="text-xs font-bold text-rose-600 animate-pulse bg-rose-100 px-2.5 py-1 rounded-full border border-rose-200 flex items-center gap-1">
-                  <span className="w-2 h-2 rounded-full bg-rose-600 animate-ping" />
+                <span className="text-xs font-bold text-rose-600 dark:text-rose-400 animate-pulse bg-rose-100 dark:bg-rose-900/60 px-2.5 py-1 rounded-full border border-rose-200 dark:border-rose-800 flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-rose-600 dark:bg-rose-400 animate-ping" />
                   {labels.listeningText[language]}
                 </span>
               )}
@@ -238,10 +238,10 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
                   className={`px-3 py-1.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-1.5 transition-all shadow-sm ${
                     isListening
                       ? 'bg-rose-600 text-white animate-bounce'
-                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-300'
+                      : 'bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700'
                   }`}
                 >
-                  {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4 text-rose-600" />}
+                  {isListening ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4 text-rose-600 dark:text-rose-400" />}
                   <span>{labels.voiceBtn[language]}</span>
                 </button>
               )}
@@ -249,7 +249,7 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-            <div className="text-xs text-slate-400 flex items-center gap-1.5">
+            <div className="text-xs text-slate-400 dark:text-slate-500 flex items-center gap-1.5">
               <Sparkles className="w-4 h-4 text-amber-500" />
               <span>100% Free & Private • Powered by Google Gemini AI</span>
             </div>
@@ -275,8 +275,8 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
         </form>
 
         {/* 0ms Instant Demo Pills */}
-        <div className="mt-6 pt-5 border-t border-slate-100">
-          <p className="text-xs font-bold text-slate-500 mb-3 flex items-center gap-1.5">
+        <div className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800">
+          <p className="text-xs font-bold text-slate-500 dark:text-slate-400 mb-3 flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5 text-amber-500" />
             <span>{labels.tryDemo[language]}</span>
           </p>
@@ -287,7 +287,7 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
                 type="button"
                 onClick={() => handlePillClick(ex.text)}
                 disabled={loading}
-                className="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-trust-50 hover:text-trust-800 hover:border-trust-300 border border-slate-200 text-xs font-semibold text-slate-700 transition-all text-left truncate max-w-full sm:max-w-[240px]"
+                className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-trust-50 dark:hover:bg-trust-900/40 hover:text-trust-800 dark:hover:text-trust-300 hover:border-trust-300 dark:hover:border-trust-700 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-700 dark:text-slate-300 transition-all text-left truncate max-w-full sm:max-w-[240px]"
               >
                 {ex.label}
               </button>
@@ -298,33 +298,33 @@ export default function LandingPage({ onAnalyze, loading, language, onEarnXP }) 
 
       {/* How It Works Section */}
       <div className="mt-12">
-        <h2 className="text-center text-lg sm:text-xl font-bold text-slate-800 mb-6">
+        <h2 className="text-center text-lg sm:text-xl font-bold text-slate-800 dark:text-slate-100 mb-6">
           {labels.howItWorks[language]}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-2">
-            <div className="w-10 h-10 rounded-xl bg-trust-50 text-trust-600 flex items-center justify-center font-bold text-lg mb-3">
+          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-2">
+            <div className="w-10 h-10 rounded-xl bg-trust-50 dark:bg-trust-900/40 text-trust-600 dark:text-trust-400 flex items-center justify-center font-bold text-lg mb-3">
               <ShieldAlert className="w-5 h-5" />
             </div>
-            <h3 className="font-bold text-slate-800 text-base">{labels.step1Title[language]}</h3>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{labels.step1Desc[language]}</p>
+            <h3 className="font-bold text-slate-800 dark:text-white text-base">{labels.step1Title[language]}</h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{labels.step1Desc[language]}</p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-2">
-            <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg mb-3">
+          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-2">
+            <div className="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-lg mb-3">
               <MessageSquareWarning className="w-5 h-5" />
             </div>
-            <h3 className="font-bold text-slate-800 text-base">{labels.step2Title[language]}</h3>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{labels.step2Desc[language]}</p>
+            <h3 className="font-bold text-slate-800 dark:text-white text-base">{labels.step2Title[language]}</h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{labels.step2Desc[language]}</p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-2">
-            <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg mb-3">
+          <div className="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm space-y-2">
+            <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-lg mb-3">
               <CheckCircle className="w-5 h-5" />
             </div>
-            <h3 className="font-bold text-slate-800 text-base">{labels.step3Title[language]}</h3>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{labels.step3Desc[language]}</p>
+            <h3 className="font-bold text-slate-800 dark:text-white text-base">{labels.step3Title[language]}</h3>
+            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">{labels.step3Desc[language]}</p>
           </div>
         </div>
       </div>
