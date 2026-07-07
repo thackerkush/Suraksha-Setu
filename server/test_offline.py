@@ -22,7 +22,7 @@ def run_tests():
     assert "en" in result["explanation"] and "hi" in result["explanation"] and "gu" in result["explanation"], "Missing multilingual explanation"
     assert len(result["action_steps"]["hi"]) > 0, "Missing Hindi action steps"
     assert result["is_fallback"] == True, "Expected is_fallback to be True"
-    print("✅ Case 1 Passed! Multilingual explanations and action steps verified.")
+    print("[PASS] Case 1 Passed! Multilingual explanations and action steps verified.")
     
     # Test 2: Legitimate Bank SMS
     legit_msg = TEST_SCAMS[2]
@@ -31,9 +31,9 @@ def run_tests():
     
     assert result_legit["verdict"] == "Likely Legitimate", f"Expected 'Likely Legitimate', got {result_legit['verdict']}"
     assert result_legit["is_fallback"] == True, "Expected is_fallback to be True"
-    print("✅ Case 3 Passed! Legitimate banking alert verified.")
+    print("[PASS] Case 3 Passed! Legitimate banking alert verified.")
     
-    print("\n🎉 ALL OFFLINE ENGINE TESTS PASSED SUCCESSFULLY!")
+    print("\n[SUCCESS] ALL OFFLINE ENGINE TESTS PASSED SUCCESSFULLY!")
 
 if __name__ == "__main__":
     run_tests()
