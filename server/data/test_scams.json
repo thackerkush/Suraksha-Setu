@@ -1,0 +1,505 @@
+[
+  {
+    "id": "scam-upi-1",
+    "title": "Fake UPI Collect Request",
+    "text": "Dear Customer, Rs 5,000 cashback is approved from PhonePe. Enter PIN on collect request to receive money into your bank account immediately.",
+    "is_demo_pill": true,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 98,
+      "category": "Fake UPI Collect Request",
+      "explanation": {
+        "en": "This is a dangerous scam. You NEVER need to enter your UPI PIN to receive money or cashback. Entering your PIN will send money out of your bank account to the scammer instead of receiving it.",
+        "hi": "यह एक खतरनाक घोटाला (स्कैम) है। आपको पैसे या कैशबैक प्राप्त करने के लिए कभी भी अपना यूपीआई पिन (UPI PIN) डालने की आवश्यकता नहीं होती है। पिन डालने से आपके बैंक खाते से पैसे कटकर स्कैमर के पास चले जाएंगे।",
+        "gu": "આ એક ખતરનાક છેતરપિંડી છે. તમારે પૈસા કે કેશબેક મેળવવા માટે ક્યારેય તમારો UPI PIN દાખલ કરવાની જરૂર નથી. PIN નાખવાથી તમારા બેંક ખાતામાંથી પૈસા સ્કેમરના ખાતામાં જતા રહેશે."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT enter your UPI PIN or accept the collect request.",
+          "Decline and block the request immediately in your PhonePe/GPay/Paytm app.",
+          "Report the sender's UPI ID or phone number within the payment app.",
+          "If you accidentally entered your PIN, call your bank immediately to block your account."
+        ],
+        "hi": [
+          "अपना यूपीआई पिन (UPI PIN) बिल्कुल न डालें और रिक्वेस्ट को स्वीकार न करें।",
+          "अपने PhonePe/GPay/Paytm ऐप में तुरंत इस रिक्वेस्ट को डिक्लाइन (रद्द) और ब्लॉक करें।",
+          "पेमेंट ऐप के अंदर भेजने वाले की यूपीआई आईडी या फोन नंबर की रिपोर्ट करें।",
+          "यदि आपने गलती से पिन डाल दिया है, तो अपना खाता ब्लॉक कराने के लिए तुरंत अपने बैंक को फोन करें।"
+        ],
+        "gu": [
+          "તમારો UPI PIN બિલકુલ દાખલ કરશો નહીં અને રિક્વેસ્ટ સ્વીકારશો નહીં.",
+          "તમારી PhonePe/GPay/Paytm એપમાં તરત જ આ રિક્વેસ્ટને નકારો (Decline) અને બ્લોક કરો.",
+          "પેમેન્ટ એપની અંદર મોકલનારની UPI ID અથવા ફોન નંબરની રિપોર્ટ કરો.",
+          "જો તમે ભૂલથી PIN દાખલ કરી દીધો હોય, તો તમારું ખાતું બ્લોક કરવા માટે તરત જ તમારી બેંકને ફોન કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-kyc-1",
+    "title": "Bank KYC Block Threat",
+    "text": "Dear SBI User, your account PAN KYC is expired today. Your NetBanking will be blocked tonight. Update immediately at http://sbi-kyc-update-net.in or call 9876543210.",
+    "is_demo_pill": true,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 99,
+      "category": "Bank KYC Phishing / Impersonation",
+      "explanation": {
+        "en": "This is a fake website trying to steal your bank password and personal details. State Bank of India (SBI) and other legitimate banks never send SMS with links from random websites or threaten immediate account blocking over text.",
+        "hi": "यह एक फर्जी वेबसाइट है जो आपके बैंक का पासवर्ड और व्यक्तिगत जानकारी चुराने की कोशिश कर रही है। भारतीय स्टेट बैंक (SBI) या कोई भी असली बैंक कभी भी ऐसे लिंक के साथ एसएमएस नहीं भेजता या तुरंत खाता बंद करने की धमकी नहीं देता।",
+        "gu": "આ એક નકલી વેબસાઇટ છે જે તમારો બેંક પાસવર્ડ અને વ્યક્તિગત માહિતી ચોરવાનો પ્રયાસ કરી રહી છે. સ્ટેટ બેંક ઓફ ઈન્ડિયા (SBI) કે અન્ય કોઈ અસલી બેંક ક્યારેય આવી લિંક સાથે SMS મોકલતી નથી અથવા ખાતું બંધ કરવાની ધમકી આપતી નથી."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT click on the link (http://sbi-kyc-update-net.in).",
+          "Do NOT call the mobile number given in the message.",
+          "If you need to check your KYC status, visit your nearest bank branch or the official bank website directly.",
+          "Report this SMS to the Cyber Crime portal at cybercrime.gov.in or call 1930."
+        ],
+        "hi": [
+          "संदेश में दिए गए लिंक (http://sbi-kyc-update-net.in) पर क्लिक न करें।",
+          "संदेश में दिए गए मोबाइल नंबर पर फोन न करें।",
+          "यदि आपको अपनी केवाईसी स्थिति जांचनी है, तो सीधे अपनी नजदीकी बैंक शाखा या आधिकारिक बैंक वेबसाइट पर जाएं।",
+          "इस एसएमएस की रिपोर्ट साइबर क्राइम पोर्टल cybercrime.gov.in पर करें या 1930 पर कॉल करें।"
+        ],
+        "gu": [
+          "સંદેશમાં આપેલી લિંક (http://sbi-kyc-update-net.in) પર ક્લિક કરશો નહીં.",
+          "સંદેશમાં આપેલા મોબાઈલ નંબર પર ફોન કરશો નહીં.",
+          "જો તમારે તમારી KYC સ્થિતિ તપાસવી હોય, તો સીધા તમારી નજીકની બેંક શાખા અથવા સત્તાવાર બેંક વેબસાઇટની મુલાકાત લો.",
+          "આ SMS ની જાણ સાયબર ક્રાઇમ પોર્ટલ cybercrime.gov.in પર કરો અથવા 1930 પર કૉલ કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "legit-bank-1",
+    "title": "Legitimate Bank SMS",
+    "text": "Dear Customer, A/c XX1234 is credited with Rs 15,000.00 on 06-Jul-26 by NEFT-INDB0000001-SALARY. Total Bal: Rs 42,350.50. - ICICI Bank",
+    "is_demo_pill": true,
+    "precomputed_result": {
+      "verdict": "Likely Legitimate",
+      "confidence": 95,
+      "category": "Legitimate Banking Alert",
+      "explanation": {
+        "en": "This is a standard transaction alert from your bank confirming that money was added (credited) to your account via NEFT transfer. It does not ask for any personal details, OTPs, or require you to click any suspicious links.",
+        "hi": "यह आपके बैंक का एक सामान्य लेन-देन संदेश (अलर्ट) है जो यह पुष्टि करता है कि एनईएफटी (NEFT) ट्रांसफर के माध्यम से आपके खाते में पैसे जमा (क्रेडिट) किए गए हैं। यह आपसे कोई व्यक्तिगत जानकारी या ओटीपी नहीं मांगता है और न ही किसी लिंक पर क्लिक करने को कहता है।",
+        "gu": "આ તમારી બેંકનો એક સામાન્ય વ્યવહાર સંદેશ (એલર્ટ) છે જે પુષ્ટિ કરે છે કે NEFT ટ્રાન્સફર દ્વારા તમારા ખાતામાં પૈસા જમા (ક્રેડિટ) થયા છે. આ સંદેશ કોઈપણ વ્યક્તિગત માહિતી કે OTP માંગતો નથી અને કોઈ લિંક પર ક્લિક કરવાનું કહેતો નથી."
+      },
+      "action_steps": {
+        "en": [
+          "No immediate action is needed.",
+          "You can verify your updated balance by logging into your official banking app or checking at an ATM.",
+          "Always keep your banking passwords and PINs secure."
+        ],
+        "hi": [
+          "किसी तत्काल कार्रवाई की आवश्यकता नहीं है।",
+          "आप अपने आधिकारिक बैंकिंग ऐप में लॉग इन करके या एटीएम पर जाकर अपने अपडेट किए गए बैलेंस की पुष्टि कर सकते हैं।",
+          "हमेशा अपने बैंकिंग पासवर्ड और पिन को सुरक्षित रखें।"
+        ],
+        "gu": [
+          "કોઈ તાત્કાલિક પગલાં લેવાની જરૂર નથી.",
+          "તમે તમારી સત્તાવાર બેંકિંગ એપમાં લૉગિન કરીને અથવા ATM પર જઈને તમારું નવું બેલેન્સ ચકાસી શકો છો.",
+          "હંમેશા તમારા બેંકિંગ પાસવર્ડ અને PIN ને સુરક્ષિત રાખો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-loan-1",
+    "title": "Predatory Loan App Harassment",
+    "text": "URGENT: Your Instant Rupee Loan EMI of Rs 3,450 is overdue by 1 day. Pay in 2 hours or we will send legal notice and call all your phone contacts with your photo. Pay via link: http://bit.ly/pay-loan-now",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 99,
+      "category": "Predatory Loan App Harassment",
+      "explanation": {
+        "en": "This is a predatory and illegal loan app scam. These unlicensed apps use intimidation, blackmail, and illegal threats to morph photos or harass family and friends. Legitimate banks and RBI-registered lenders follow strict legal recovery procedures and never threaten public defamation.",
+        "hi": "यह एक अवैध और गैरकानूनी लोन ऐप का घोटाला है। ये बिना लाइसेंस वाले ऐप लोगों को डराने, ब्लैकमेल करने और फोन बुक के संपर्कों को फोन करके परेशान करने की धमकी देते हैं। असली बैंक और आरबीआई (RBI) पंजीकृत संस्थान कानूनी प्रक्रिया का पालन करते हैं और कभी ऐसी धमकियां नहीं देते।",
+        "gu": "આ એક ગેરકાયદેસર અને લૂંટારુ લોન એપ કૌભાંડ છે. આ લાયસન્સ વગરની એપ્સ લોકોને ડરાવવા, બ્લેકમેલ કરવા અને ફોન બુકના સંપર્કોને ફોન કરીને હેરાન કરવાની ધમકી આપે છે. અસલી બેંકો અને RBI રજિસ્ટર્ડ સંસ્થાઓ કાનૂની પ્રક્રિયાનું પાલન કરે છે અને ક્યારેય આવી ધમકીઓ આપતી નથી."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT pay any money through the provided short link.",
+          "Uninstall the loan app from your phone immediately and revoke all app permissions.",
+          "Inform your family and contacts that your phone number was targeted by cyber scammers.",
+          "File an immediate complaint on the National Cyber Crime portal at cybercrime.gov.in or dial 1930."
+        ],
+        "hi": [
+          "दिए गए लिंक के माध्यम से कोई भी पैसा न चुकाएं।",
+          "अपने फोन से लोन ऐप को तुरंत अनइंस्टॉल (हटाएं) करें और सभी ऐप अनुमतियां (परमिशन) रद्द करें।",
+          "अपने परिवार और संपर्कों को सूचित करें कि साइबर स्कैमर्स आपके फोन नंबर को निशाना बना रहे हैं।",
+          "राष्ट्रीय साइबर अपराध पोर्टल cybercrime.gov.in पर तुरंत शिकायत दर्ज करें या 1930 डायल करें।"
+        ],
+        "gu": [
+          "આપેલી લિંક દ્વારા કોઈ પણ પૈસા ચૂકવશો નહીં.",
+          "તમારા ફોનમાંથી લોન એપને તરત જ અનઇન્સ્ટોલ (દૂર) કરો અને બધી એપ પરમિશન રદ કરો.",
+          "તમારા પરિવાર અને સંપર્કોને જાણ કરો કે સાયબર સ્કેમર્સ તમારા ફોન નંબરને નિશાન બનાવી રહ્યા છે.",
+          "રાષ્ટ્રીય સાયબર ક્રાઇમ પોર્ટલ cybercrime.gov.in પર તરત જ ફરિયાદ નોંધાવો અથવા 1930 ડાયલ કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-arrest-1",
+    "title": "Digital Arrest / Police Impersonation",
+    "text": "This is an automated call from CBI/Cyber Crime Department. A parcel sent in your name from Mumbai to Taiwan contains illegal narcotics and 5 passports. Your Aadhaar is linked to money laundering. Press 9 immediately to speak to IPS Officer or face immediate arrest.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 99,
+      "category": "Digital Arrest / Cybercrime Impersonation",
+      "explanation": {
+        "en": "This is a severe 'Digital Arrest' scam. The CBI, Police, Customs, or Supreme Court NEVER conduct investigations or arrest interrogations over phone calls, WhatsApp video calls, or Skype. Scammers use fear to force victims into transferring money into fake 'safe accounts'.",
+        "hi": "यह एक बेहद खतरनाक 'डिजिटल अरेस्ट' (Digital Arrest) घोटाला है। सीबीआई (CBI), पुलिस, कस्टम या अदालत कभी भी फोन कॉल, व्हाट्सएप वीडियो कॉल या स्काइप पर जांच या गिरफ्तारी की धमकी नहीं देते हैं। स्कैमर डर का माहौल बनाकर पीड़ितों से फर्जी खातों में पैसे ट्रांसफर करवाते हैं।",
+        "gu": "આ એક અત્યંત ખતરનાક 'ડિજિટલ અરેસ્ટ' (Digital Arrest) કૌભાંડ છે. CBI, પોલીસ, કસ્ટમ્સ કે કોર્ટ ક્યારેય ફોન કૉલ, WhatsApp વિડિયો કૉલ કે Skype પર તપાસ કે ધરપકડની ધમકી આપતા નથી. સ્કેમર્સ ડરનો માહોલ બનાવીને પીડિતો પાસેથી નકલી ખાતાઓમાં પૈસા ટ્રાન્સફર કરાવે છે."
+      },
+      "action_steps": {
+        "en": [
+          "Disconnect the call immediately. Do NOT press 9 or engage in conversation.",
+          "Remember that there is no concept of 'Digital Arrest' under Indian law.",
+          "Do NOT transfer any money to so-called 'RBI safe accounts' or government verification accounts.",
+          "Report the scam caller's phone number to Chakshu on the Sanchar Saathi portal (sancharsaathi.gov.in) and call 1930."
+        ],
+        "hi": [
+          "फोन कॉल तुरंत काट दें। 9 न दबाएं और बातचीत में न पड़ें।",
+          "याद रखें कि भारतीय कानून में 'डिजिटल अरेस्ट' जैसी कोई चीज नहीं होती है।",
+          "तथाकथित 'आरबीआई सुरक्षित खातों' या सरकारी सत्यापन खातों में कोई पैसा ट्रांसफर न करें।",
+          "संचार साथी पोर्टल (sancharsaathi.gov.in) के 'चक्षु' (Chakshu) पर स्कैमर के फोन नंबर की रिपोर्ट करें और 1930 पर कॉल करें।"
+        ],
+        "gu": [
+          "ફોન કૉલ તરત જ કાપી નાખો. 9 દબાવશો નહીં અને વાતચીતમાં પડશો નહીં.",
+          "યાદ રાખો કે ભારતીય કાયદામાં 'ડિજિટલ અરેસ્ટ' જેવી કોઈ વસ્તુ નથી.",
+          "કહેવાતા 'RBI સુરક્ષિત ખાતા' કે સરકારી વેરિફિકેશન ખાતાઓમાં કોઈપણ પૈસા ટ્રાન્સફર કરશો નહીં.",
+          "સંચાર સાથી પોર્ટલ (sancharsaathi.gov.in) ના 'ચક્ષુ' (Chakshu) પર સ્કેમરના ફોન નંબરની રિપોર્ટ કરો અને 1930 પર કૉલ કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-courier-1",
+    "title": "Customs / Courier Parcel Scam",
+    "text": "India Post Alert: Your parcel ID #IN88392 is held at Delhi Customs due to incomplete address and unpaid customs duty of Rs 49. Pay immediately via UPI link http://indiapost-track-customs.top to avoid package confiscation.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 98,
+      "category": "Customs / Courier Scam",
+      "explanation": {
+        "en": "This is a phishing scam using the name of India Post or courier companies. Scammers ask for a tiny payment (like Rs 49) through a fake website to steal your UPI PIN, credit card details, or bank account credentials.",
+        "hi": "यह इंडिया पोस्ट (भारतीय डाक) या कूरियर कंपनियों के नाम पर किया जाने वाला एक फिशिंग स्कैम है। स्कैमर एक फर्जी वेबसाइट के माध्यम से छोटी राशि (जैसे 49 रुपये) मांगने का नाटक करते हैं ताकि वे आपका यूपीआई पिन या बैंक जानकारी चुरा सकें।",
+        "gu": "આ ઈન્ડિયા પોસ્ટ (ભારતીય ટપાલ) અથવા કુરિયર કંપનીઓના નામ પર થતું ફિશિંગ કૌભાંડ છે. સ્કેમર્સ એક નકલી વેબસાઇટ દ્વારા નાની રકમ (જેમ કે રૂ. 49) માંગવાનો ઢોંગ કરે છે જેથી તેઓ તમારો UPI PIN કે બેંક માહિતી ચોરી શકે."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT click the tracking link or make any payment.",
+          "Check your actual parcel shipments only on the official India Post website (www.indiapost.gov.in).",
+          "Ignore and delete the SMS.",
+          "Report the scam link to cybercrime.gov.in."
+        ],
+        "hi": [
+          "ट्रैकिंग लिंक पर क्लिक न करें और कोई भुगतान न करें।",
+          "अपने वास्तविक पार्सल की स्थिति केवल इंडिया पोस्ट की आधिकारिक वेबसाइट (www.indiapost.gov.in) पर जांचें।",
+          "इस एसएमएस को नजरअंदाज करें और डिलीट कर दें।",
+          "फर्जी लिंक की रिपोर्ट cybercrime.gov.in पर करें।"
+        ],
+        "gu": [
+          "ટ્રેકિંગ લિંક પર ક્લિક કરશો નહીં અને કોઈ ચૂકવણી કરશો નહીં.",
+          "તમારા વાસ્તવિક પાર્સલની સ્થિતિ માત્ર ઈન્ડિયા પોસ્ટની સત્તાવાર વેબસાઇટ (www.indiapost.gov.in) પર તપાસો.",
+          "આ SMS ને અવગણો અને ડિલીટ કરો.",
+          "નકલી લિંકની જાણ cybercrime.gov.in પર કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-lottery-1",
+    "title": "Lottery / Prize Scam",
+    "text": "Congratulations! You have won Rs 25,000,000 in Kaun Banega Crorepati (KBC) WhatsApp Lucky Draw! To transfer prize money to your bank account, pay processing tax of Rs 1,500 via GPay to KBC Manager Mr. Sharma at 9988776655.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 99,
+      "category": "Lottery / Prize Scam",
+      "explanation": {
+        "en": "This is a classic advance-fee lottery scam. There is no official KBC WhatsApp lucky draw. Genuine lotteries or competitions never ask winners to pay an upfront fee, tax, or processing charge via UPI or GPay to receive their winnings.",
+        "hi": "यह एक प्रसिद्ध लॉटरी घोटाला है। कौन बनेगा करोड़पति (KBC) द्वारा कोई व्हाट्सएप लकी ड्रॉ नहीं चलाया जाता है। असली लॉटरी या प्रतियोगिताएं जीतने वाले से पुरस्कार राशि देने के बदले में कभी भी एडवांस फीस, टैक्स या प्रोसेसिंग चार्ज नहीं मांगती हैं।",
+        "gu": "આ એક જાણીતું લોટરી કૌભાંડ છે. કૌન બનેગા કરોડપતિ (KBC) દ્વારા કોઈ WhatsApp લકી ડ્રો ચલાવવામાં આવતો નથી. અસલી લોટરી કે સ્પર્ધાઓ વિજેતા પાસેથી ઈનામની રકમ આપવા બદલ ક્યારેય એડવાન્સ ફી, ટેક્સ કે પ્રોસેસિંગ ચાર્જ માંગતી નથી."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT pay any advance processing fee or tax.",
+          "Do NOT call or message the phone number provided.",
+          "Block the sender on WhatsApp immediately.",
+          "Warn your family members about WhatsApp lucky draw scams."
+        ],
+        "hi": [
+          "कोई भी एडवांस प्रोसेसिंग फीस या टैक्स जमा न करें।",
+          "दिए गए फोन नंबर पर कॉल या मैसेज न करें।",
+          "भेजने वाले को व्हाट्सएप पर तुरंत ब्लॉक करें।",
+          "अपने परिवार के सदस्यों को व्हाट्सएप लकी ड्रॉ स्कैम के बारे में चेतावनी दें।"
+        ],
+        "gu": [
+          "કોઈપણ એડવાન્સ પ્રોસેસિંગ ફી કે ટેક્સ જમા કરશો નહીં.",
+          "આપેલા ફોન નંબર પર કૉલ કે મેસેજ કરશો નહીં.",
+          "મોકલનારને WhatsApp પર તરત જ બ્લોક કરો.",
+          "તમારા પરિવારના સભ્યોને WhatsApp લકી ડ્રો સ્કેમ વિશે ચેતવણી આપો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-investment-1",
+    "title": "Telegram Investment / Ponzi Scheme",
+    "text": "Earn Rs 5,000 to Rs 20,000 daily from home! Join our VIP Telegram Trading Group. Simply rate Amazon products and invest Rs 1,000 to get Rs 2,800 return in 10 minutes. 100% guaranteed profit. Click link to join: t.me/amazon_work_from_home_vip",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 99,
+      "category": "Investment / Ponzi Scheme",
+      "explanation": {
+        "en": "This is a 'task-based' Ponzi scam on Telegram. Scammers initially pay small returns to build trust, then lure victims into investing thousands or lakhs of rupees into fake trading platforms before freezing their accounts and disappearing.",
+        "hi": "यह टेलीग्राम पर चलने वाला एक टास्क-आधारित पोंजी स्कैम है। स्कैमर शुरू में विश्वास जीतने के लिए छोटा मुनाफा देते हैं, फिर पीड़ितों को फर्जी ट्रेडिंग प्लेटफॉर्म में हजारों या लाखों रुपये निवेश करने के लिए फंसाते हैं और पैसे लेकर गायब हो जाते हैं।",
+        "gu": "આ ટેલિગ્રામ પર ચાલતું એક ટાસ્ક-આધારિત પોંઝી કૌભાંડ છે. સ્કેમર્સ શરૂઆતમાં વિશ્વાસ જીતવા માટે નાનો નફો આપે છે, પછી પીડિતોને નકલી ટ્રેડિંગ પ્લેટફોર્મમાં હજારો કે લાખો રૂપિયા રોકવા માટે ફસાવે છે અને પૈસા લઈને ગાયબ થઈ જાય છે."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT join the Telegram group or click the link.",
+          "Never invest money into unverified online work-from-home tasks or rating jobs.",
+          "Remember that no legitimate business guarantees 100% profit or doubling money in minutes.",
+          "Report the Telegram channel and associated UPI IDs to cybercrime authorities."
+        ],
+        "hi": [
+          "टेलीग्राम ग्रुप में शामिल न हों और लिंक पर क्लिक न करें।",
+          "कभी भी असत्यापित ऑनलाइन वर्क-फ्रॉम-होम कार्यों या रेटिंग जॉब्स में पैसा निवेश न करें।",
+          "याद रखें कि कोई भी असली व्यवसाय 100% गारंटीड मुनाफे या मिनटों में पैसा दोगुना करने का वादा नहीं करता।",
+          "टेलीग्राम चैनल और उससे जुड़े यूपीआई आईडी की रिपोर्ट साइबर क्राइम अधिकारियों को करें।"
+        ],
+        "gu": [
+          "ટેલિગ્રામ ગ્રુપમાં જોડાશો નહીં અને લિંક પર ક્લિક કરશો નહીં.",
+          "ક્યારેય પણ અસત્યાપિત ઓનલાઈન વર્ક-ફ્રોમ-હોમ કાર્યો કે રેટિંગ જોબ્સમાં પૈસા રોકશો નહીં.",
+          "યાદ રાખો કે કોઈ પણ અસલી વ્યવસાય 100% ગેરંટીડ નફા કે મિનિટોમાં પૈસા બમણા કરવાનું વચન આપતો નથી.",
+          "ટેલિગ્રામ ચેનલ અને તેની સાથે જોડાયેલી UPI ID ની રિપોર્ટ સાયબર ક્રાઇમ અધિકારીઓને કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-otp-1",
+    "title": "Bank Official OTP Impersonation",
+    "text": "Hello, I am calling from HDFC Bank Credit Card security department. We noticed a suspicious charge of Rs 48,900 on your card. To cancel this transaction immediately, please share the 6-digit OTP just sent to your mobile number.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 99,
+      "category": "Bank Official Impersonation",
+      "explanation": {
+        "en": "This is an impersonation scam. Bank employees, credit card departments, or RBI officials NEVER ask for your OTP, CVV, or PIN over the phone. Scammers trigger a fraudulent transaction themselves and need YOUR OTP to complete the theft.",
+        "hi": "यह बैंक कर्मचारी बनने का एक ढोंग (इंपर्सनेशन स्कैम) है। बैंक कर्मचारी, क्रेडिट कार्ड विभाग या आरबीआई अधिकारी कभी भी फोन पर आपसे ओटीपी (OTP), सीवीवी (CVV) या पिन नहीं मांगते हैं। स्कैमर खुद लेन-देन शुरू करते हैं और पैसे चुराने के लिए उन्हें आपके ओटीपी की आवश्यकता होती है।",
+        "gu": "આ બેંક કર્મચારી બનવાનો ઢોંગ (ઈમ્પર્સનેશન સ્કેમ) છે. બેંક કર્મચારીઓ, ક્રેડિટ કાર્ડ વિભાગ કે RBI અધિકારીઓ ક્યારેય ફોન પર તમારી પાસેથી OTP, CVV કે PIN માંગતા નથી. સ્કેમર્સ જાતે જ ટ્રાન્ઝેક્શન શરૂ કરે છે અને પૈસા ચોરવા માટે તેમને તમારા OTP ની જરૂર હોય છે."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT share the 6-digit OTP with the caller under any circumstances.",
+          "Hang up the phone immediately.",
+          "Call the customer care number printed on the back of your physical credit card or bank passbook to verify.",
+          "If you shared the OTP, call your bank immediately to block your card."
+        ],
+        "hi": [
+          "किसी भी परिस्थिति में फोन करने वाले के साथ 6 अंकों का ओटीपी (OTP) साझा न करें।",
+          "फोन तुरंत काट दें।",
+          "सच्चाई जानने के लिए अपने क्रेडिट कार्ड के पीछे या बैंक पासबुक पर छपे कस्टमर केयर नंबर पर फोन करें।",
+          "यदि आपने गलती से ओटीपी बता दिया है, तो अपना कार्ड ब्लॉक करने के लिए तुरंत बैंक को फोन करें।"
+        ],
+        "gu": [
+          "કોઈપણ સંજોગોમાં ફોન કરનાર સાથે 6 આંકડાનો OTP શેર કરશો નહીં.",
+          "ફોન તરત જ કાપી નાખો.",
+          "સચ્ચાઈ જાણવા માટે તમારા ક્રેડિટ કાર્ડની પાછળ અથવા બેંક પાસબુક પર છપાયેલા કસ્ટમર કેર નંબર પર ફોન કરો.",
+          "જો તમે ભૂલથી OTP જણાવી દીધો હોય, તો તમારું કાર્ડ બ્લોક કરવા માટે તરત જ બેંકને ફોન કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "scam-scheme-1",
+    "title": "Fake Government Scheme",
+    "text": "Pradhan Mantri Jan Dhan Yojana Alert: Government is depositing Rs 10,000 direct benefit transfer (DBT) into all rural bank accounts for Diwali. Verify your Aadhaar and bank account number here: http://pm-jandhan-dbt-yojana.org",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Scam",
+      "confidence": 98,
+      "category": "Fake Government Scheme",
+      "explanation": {
+        "en": "This is a fake government scheme alert designed to harvest your Aadhaar number, bank account details, and biometrics. The Indian Government does not use unofficial domain names (.org / .top / .vip) or send random SMS links for Direct Benefit Transfers (DBT).",
+        "hi": "यह एक फर्जी सरकारी योजना का संदेश है जिसका उद्देश्य आपका आधार नंबर और बैंक खाते की जानकारी चुराना है। भारत सरकार डायरेक्ट बेनिफिट ट्रांसफर (DBT) के लिए अनधिकृत वेबसाइट लिंक (.org / .top / .vip) वाले एसएमएस नहीं भेजती है।",
+        "gu": "આ એક નકલી સરકારી યોજનાનો સંદેશ છે જેનો હેતુ તમારો આધાર નંબર અને બેંક ખાતાની માહિતી ચોરવાનો છે. ભારત સરકાર ડાયરેક્ટ બેનિફિટ ટ્રાન્સફર (DBT) માટે બિનસત્તાવાર વેબસાઇટ લિંક (.org / .top / .vip) વાળા SMS મોકલતી નથી."
+      },
+      "action_steps": {
+        "en": [
+          "Do NOT click on the link or submit your Aadhaar and bank account details.",
+          "Verify any government scheme only on official websites ending in '.gov.in' or '.nic.in'.",
+          "Visit your nearest Common Service Centre (CSC) or bank branch for genuine DBT inquiries.",
+          "Delete the misleading SMS."
+        ],
+        "hi": [
+          "लिंक पर क्लिक न करें और अपना आधार और बैंक खाता विवरण दर्ज न करें।",
+          "किसी भी सरकारी योजना की पुष्टि केवल '.gov.in' या '.nic.in' पर समाप्त होने वाली आधिकारिक वेबसाइटों पर करें।",
+          "असली डीबीटी (DBT) जानकारी के लिए अपने नजदीकी कॉमन सर्विस सेंटर (CSC) या बैंक शाखा में जाएं।",
+          "इस भ्रामक एसएमएस को डिलीट कर दें।"
+        ],
+        "gu": [
+          "લિંક પર ક્લિક કરશો નહીં અને તમારી આધાર અને બેંક ખાતાની માહિતી દાખલ કરશો નહીં.",
+          "કોઈપણ સરકારી યોજનાની પુષ્ટિ માત્ર '.gov.in' અથવા '.nic.in' પર સમાપ્ત થતી સત્તાવાર વેબસાઇટો પર કરો.",
+          "અસલી DBT માહિતી માટે તમારા નજીકના કોમન સર્વિસ સેન્ટર (CSC) અથવા બેંક શાખાની મુલાકાત લો.",
+          "આ ગેરમાર્ગે દોરતા SMS ને ડિલીટ કરો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "legit-upi-1",
+    "title": "Legitimate UPI Payment Confirmation",
+    "text": "Paid Rs. 450.00 to Ramesh Kumar (ramesh@okaxis) via UPI Ref No 418920192837 on 07-Jul-26. If not done by you, report to your bank immediately.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Likely Legitimate",
+      "confidence": 95,
+      "category": "Legitimate Transaction Confirmation",
+      "explanation": {
+        "en": "This is a legitimate transaction receipt SMS from your payment provider or bank confirming a UPI payment you made. It provides the reference number for your records and gives standard safety guidance to report if unauthorized.",
+        "hi": "यह आपके पेमेंट ऐप या बैंक द्वारा भेजा गया एक सही लेन-देन रसीद संदेश है जो आपके द्वारा किए गए यूपीआई भुगतान की पुष्टि करता है। यह आपके रिकॉर्ड के लिए संदर्भ संख्या (Reference Number) प्रदान करता है।",
+        "gu": "આ તમારી પેમેન્ટ એપ અથવા બેંક દ્વારા મોકલવામાં આવેલ એક સાચો વ્યવહાર રસીદ સંદેશ છે જે તમારા દ્વારા કરવામાં આવેલી UPI ચૂકવણીની પુષ્ટિ કરે છે. આ તમારા રેકોર્ડ માટે સંદર્ભ નંબર (Reference Number) પ્રદાન કરે છે."
+      },
+      "action_steps": {
+        "en": [
+          "No action is required if you performed this payment.",
+          "If you did NOT make this payment, call your bank's official emergency helpline immediately.",
+          "Keep transaction reference numbers saved for future accounting."
+        ],
+        "hi": [
+          "यदि आपने यह भुगतान किया है तो किसी कार्रवाई की आवश्यकता नहीं है।",
+          "यदि आपने यह भुगतान नहीं किया है, तो तुरंत अपने बैंक के आपातकालीन हेल्पलाइन नंबर पर फोन करें।",
+          "भविष्य के रिकॉर्ड के लिए लेन-देन संदर्भ संख्या सुरक्षित रखें।"
+        ],
+        "gu": [
+          "જો તમે આ ચૂકવણી કરી હોય તો કોઈ પગલાં લેવાની જરૂર નથી.",
+          "જો તમે આ ચૂકવણી નથી કરી, તો તરત જ તમારી બેંકના આપાતકાલીન હેલ્પલાઇન નંબર પર ફોન કરો.",
+          "ભવિષ્યના રેકોર્ડ માટે વ્યવહાર સંદર્ભ નંબર સુરક્ષિત રાખો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "legit-otp-1",
+    "title": "Legitimate Bank OTP Alert",
+    "text": "482910 is your OTP for ICICI Bank NetBanking login. Valid for 10 mins. Do NOT share this OTP with anyone, including bank officials or employees.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Likely Legitimate",
+      "confidence": 97,
+      "category": "Legitimate Banking Alert",
+      "explanation": {
+        "en": "This is a genuine One-Time Password (OTP) generated by your bank when you or someone else attempts to log into NetBanking. The SMS explicitly warns you never to share this code with anyone, which is standard banking security practice.",
+        "hi": "यह आपके बैंक द्वारा उत्पन्न किया गया एक असली वन-टाइम पासवर्ड (ओटीपी) है जब आप या कोई अन्य नेटबैंकिंग में लॉग इन करने का प्रयास करता है। संदेश स्पष्ट रूप से आपको चेतावनी देता है कि इस कोड को किसी के साथ साझा न करें।",
+        "gu": "આ તમારી બેંક દ્વારા જનરેટ કરવામાં આવેલ એક અસલી વન-ટાઇમ પાસવર્ડ (OTP) છે જ્યારે તમે અથવા અન્ય કોઈ નેટબેંકિંગમાં લૉગિન કરવાનો પ્રયાસ કરે છે. સંદેશ સ્પષ્ટપણે તમને ચેતવણી આપે છે કે આ કોડ કોઈની સાથે શેર કરશો નહીં."
+      },
+      "action_steps": {
+        "en": [
+          "If you are logging in right now, use this OTP on the official banking portal.",
+          "If you did NOT request this OTP, someone may be trying to access your account. Change your NetBanking password immediately.",
+          "NEVER share this 6-digit code with anyone calling you on the phone."
+        ],
+        "hi": [
+          "यदि आप स्वयं लॉग इन कर रहे हैं, तो आधिकारिक बैंकिंग पोर्टल पर इस ओटीपी का उपयोग करें।",
+          "यदि आपने इस ओटीपी का अनुरोध नहीं किया है, तो कोई आपके खाते में प्रवेश करने का प्रयास कर रहा हो सकता है। तुरंत अपना नेटबैंकिंग पासवर्ड बदलें।",
+          "फोन पर कॉल करने वाले किसी भी व्यक्ति के साथ यह 6 अंकों का कोड कभी साझा न करें।"
+        ],
+        "gu": [
+          "જો તમે જાતે લૉગિન કરી રહ્યા છો, તો સત્તાવાર બેંકિંગ પોર્ટલ પર આ OTP નો ઉપયોગ કરો.",
+          "જો તમે આ OTP ની વિનંતી નથી કરી, તો કોઈ તમારા ખાતામાં પ્રવેશ કરવાનો પ્રયાસ કરી રહ્યું હોઈ શકે છે. તરત જ તમારો નેટબેંકિંગ પાસવર્ડ બદલો.",
+          "ફોન પર કૉલ કરનાર કોઈપણ વ્યક્તિ સાથે આ 6 આંકડાનો કોડ ક્યારેય શેર કરશો નહીં."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "legit-bill-1",
+    "title": "Legitimate Electricity Bill",
+    "text": "Dear Consumer, Electricity bill for Cons No. 89210398 for month of June 2026 is Rs 1,240.00. Due date is 15-Jul-2026. Pay online at official website www.uppclonline.com or via authorized UPPCL counters.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Likely Legitimate",
+      "confidence": 94,
+      "category": "Legitimate Utility Alert",
+      "explanation": {
+        "en": "This is a normal utility bill reminder from the state electricity board. It directs you to pay through their well-known official website or authorized counters and does not threaten immediate power disconnection within 2 hours like utility scams do.",
+        "hi": "यह राज्य बिजली बोर्ड की ओर से एक सामान्य बिजली बिल अनुस्मारक (रिमाइंडर) है। यह आपको उनकी प्रसिद्ध आधिकारिक वेबसाइट या अधिकृत काउंटरों के माध्यम से भुगतान करने का निर्देश देता है और बिजली बिल स्कैम की तरह 2 घंटे में बिजली काटने की धमकी नहीं देता।",
+        "gu": "આ રાજ્ય વીજળી બોર્ડ તરફથી એક સામાન્ય વીજળી બિલ રિમાઇન્ડર છે. આ તમને તેમની જાણીતી સત્તાવાર વેબસાઇટ અથવા અધિકૃત કાઉન્ટરો દ્વારા ચૂકવણી કરવાનો નિર્દેશ આપે છે અને વીજળી બિલ સ્કેમની જેમ 2 કલાકમાં વીજળી કાપવાની ધમકી આપતું નથી."
+      },
+      "action_steps": {
+        "en": [
+          "Pay your bill before the due date through the official utility website or trusted UPI apps.",
+          "Always verify your consumer number before making a payment.",
+          "Beware of fake calls from personal mobile numbers threatening to cut power at night."
+        ],
+        "hi": [
+          "आधिकारिक बिजली वेबसाइट या विश्वसनीय यूपीआई ऐप्स के माध्यम से नियत तारीख से पहले अपने बिल का भुगतान करें।",
+          "भुगतान करने से पहले हमेशा अपनी उपभोक्ता संख्या (Consumer Number) की पुष्टि करें।",
+          "रात में बिजली काटने की धमकी देने वाले व्यक्तिगत मोबाइल नंबरों से आने वाली फर्जी कॉल से सावधान रहें।"
+        ],
+        "gu": [
+          "સત્તાવાર વીજળી વેબસાઇટ અથવા વિશ્વસનીય UPI એપ્સ દ્વારા નિયત તારીખ પહેલાં તમારા બિલની ચૂકવણી કરો.",
+          "ચૂકવણી કરતા પહેલાં હંમેશા તમારા ગ્રાહક નંબર (Consumer Number) ની પુષ્ટિ કરો.",
+          "રાત્રે વીજળી કાપવાની ધમકી આપતા વ્યક્તિગત મોબાઈલ નંબરોથી આવતા નકલી કૉલ્સથી સાવધ રહો."
+        ]
+      },
+      "is_fallback": true
+    }
+  },
+  {
+    "id": "legit-gas-1",
+    "title": "Legitimate LPG Gas Booking",
+    "text": "Your Indane LPG cylinder refill booking ref no. 291823901 is confirmed. Cash on delivery amount is Rs. 803.00. Delivery expected within 2-3 working days.",
+    "is_demo_pill": false,
+    "precomputed_result": {
+      "verdict": "Likely Legitimate",
+      "confidence": 96,
+      "category": "Legitimate Utility Alert",
+      "explanation": {
+        "en": "This is an authentic confirmation SMS for your LPG gas cylinder refill booking. It clearly states the standard cash-on-delivery price and expected delivery timeframe without asking for advance online payments via suspicious links.",
+        "hi": "यह आपकी रसोई गैस (LPG) सिलेंडर रिफिल बुकिंग के लिए एक प्रामाणिक पुष्टि संदेश है। यह स्पष्ट रूप से डिलीवरी के समय देय राशि और डिलीवरी के समय को बताता है और किसी संदिग्ध लिंक से एडवांस ऑनलाइन भुगतान नहीं मांगता।",
+        "gu": "આ તમારી રસોઈ ગેસ (LPG) સિલિન્ડર રિફિલ બુકિંગ માટે એક પ્રામાણિક પુષ્ટિ સંદેશ છે. આ સ્પષ્ટપણે ડિલિવરી સમયે ચૂકવવાપાત્ર રકમ અને સમય જણાવે છે અને કોઈપણ શંકાસ્પદ લિંકથી એડવાન્સ ઓનલાઈન ચૂકવણી માંગતું નથી."
+      },
+      "action_steps": {
+        "en": [
+          "Keep exact cash ready or pay via official UPI QR code shown by the delivery agent when the cylinder arrives.",
+          "Check the cylinder seal before accepting delivery.",
+          "No online action is needed from this SMS."
+        ],
+        "hi": [
+          "सिलेंडर आने पर डिलीवरी एजेंट को देने के लिए नकद राशि तैयार रखें या एजेंट के आधिकारिक यूपीआई क्यूआर कोड द्वारा भुगतान करें।",
+          "डिलीवरी स्वीकार करने से पहले सिलेंडर की सील अवश्य जांचें।",
+          "इस एसएमएस से कोई भी ऑनलाइन कार्रवाई करने की आवश्यकता नहीं है।"
+        ],
+        "gu": [
+          "સિલિન્ડર આવે ત્યારે ડિલિવરી એજન્ટને આપવા માટે રોકડ રકમ તૈયાર રાખો અથવા એજન્ટના સત્તાવાર UPI QR કોડ દ્વારા ચૂકવણી કરો.",
+          "ડિલિવરી સ્વીકારતા પહેલાં સિલિન્ડરનું સીલ ચોક્કસ તપાસો.",
+          "આ SMS થી કોઈ પણ ઓનલાઈન કાર્યવાહી કરવાની જરૂર નથી."
+        ]
+      },
+      "is_fallback": true
+    }
+  }
+]
