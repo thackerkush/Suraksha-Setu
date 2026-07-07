@@ -3,6 +3,7 @@ import LandingPage from './components/LandingPage';
 import ResultCard from './components/ResultCard';
 import LanguageSelector from './components/LanguageSelector';
 import Disclaimer from './components/Disclaimer';
+import RecentScamsFeed from './components/RecentScamsFeed';
 import { ShieldCheck, Sparkles, AlertCircle } from 'lucide-react';
 
 export default function App() {
@@ -101,6 +102,7 @@ export default function App() {
         )}
 
         <Disclaimer language={language} />
+        <RecentScamsFeed language={language} />
       </main>
 
       {/* Footer */}
