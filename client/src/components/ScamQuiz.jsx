@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ShieldAlert, ShieldCheck, HelpCircle, Trophy, ArrowRight, RefreshCw, Sparkles, CheckCircle2, XCircle } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ShieldAlert, ShieldCheck, HelpCircle, Trophy, ArrowRight, RefreshCw, Sparkles, CheckCircle2, XCircle, Volume2, VolumeX } from 'lucide-react';
 
 export default function ScamQuiz({ language, onEarnXP }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,6 +8,13 @@ export default function ScamQuiz({ language, onEarnXP }) {
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [answeredCount, setAnsweredCount] = useState(0);
+  const [isSpeaking, setIsSpeaking] = useState(false);
+
+  useEffect(() => {
+    return () => {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    };
+  }, []);
 
   const scenarios = [
     {
@@ -121,9 +128,31 @@ export default function ScamQuiz({ language, onEarnXP }) {
   };
 
   const handleNext = () => {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    setIsSpeaking(false);
     setSelectedAnswer(null);
     setIsCorrect(null);
     setCurrentIndex((prev) => (prev + 1) % scenarios.length);
+  };
+
+  const handleReadScenario = () => {
+    if (!('speechSynthesis' in window)) {
+      alert("Text-to-speech is not supported in this browser.");
+      return;
+    }
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(currentScenario.text);
+    utterance.lang = language === 'hi' ? 'hi-IN' : (language === 'gu' ? 'gu-IN' : 'en-IN');
+    utterance.rate = 0.95;
+    utterance.onstart = () => setIsSpeaking(true);
+    utterance.onend = () => setIsSpeaking(false);
+    utterance.onerror = () => setIsSpeaking(false);
+    window.speechSynthesis.speak(utterance);
   };
 
   const handleRestart = () => {
@@ -219,7 +248,17 @@ export default function ScamQuiz({ language, onEarnXP }) {
         {/* Scenario Card */}
         <div className="mt-6">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">
-            <span>Scenario #{currentIndex + 1} of {scenarios.length}</span>
+            <div className="flex items-center gap-3">
+              <span>Scenario #{currentIndex + 1} of {scenarios.length}</span>
+              <button
+                type="button"
+                onClick={handleReadScenario}
+                className="inline-flex items-center gap-1 text-trust-600 hover:text-trust-800 font-bold bg-trust-50 px-2.5 py-1 rounded-lg border border-trust-200 transition-all"
+              >
+                {isSpeaking ? <VolumeX className="w-3.5 h-3.5 animate-bounce" /> : <Volume2 className="w-3.5 h-3.5" />}
+                <span className="text-[11px]">{isSpeaking ? "Stop" : "🔊 Listen"}</span>
+              </button>
+            </div>
             <span className="text-trust-600 font-bold">{currentScenario.category}</span>
           </div>
 
