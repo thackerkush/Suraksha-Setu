@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Radio, RefreshCw, CheckCircle2, ShieldAlert } from 'lucide-react';
 
-export default function RecentScamsFeed({ language }) {
+export default function RecentScamsFeed({ language, onEarnXP }) {
   const [scams, setScams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showReportForm, setShowReportForm] = useState(false);
@@ -74,6 +74,7 @@ export default function RecentScamsFeed({ language }) {
       });
 
       if (res.ok) {
+        if (onEarnXP) onEarnXP(50, "Community Alert Reported!");
         setReportSuccess(true);
         setReportSnippet('');
         fetchRecentScams();
@@ -92,6 +93,7 @@ export default function RecentScamsFeed({ language }) {
         timestamp: "Just now",
         snippet: reportSnippet.trim().slice(0, 60) + (reportSnippet.length > 60 ? '...' : '')
       }, ...prev]);
+      if (onEarnXP) onEarnXP(50, "Community Alert Reported!");
       setReportSuccess(true);
       setReportSnippet('');
       setTimeout(() => {
