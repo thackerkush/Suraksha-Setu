@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ShieldCheck, Sparkles, Send, MessageSquareAlert, PhoneCall } from 'lucide-react';
+import { ShieldCheck, Sparkles, Send, AlertCircle, PhoneCall } from 'lucide-react';
 
 export default function LandingPage({ onAnalyze, loading, language }) {
   const [text, setText] = useState('');
@@ -160,7 +160,7 @@ export default function LandingPage({ onAnalyze, loading, language }) {
         {/* Clickable Demo Pills Section */}
         <div className="mt-8 pt-6 border-t border-slate-100">
           <div className="flex items-center gap-2 text-xs font-semibold text-slate-600 uppercase tracking-wider mb-3">
-            <MessageSquareAlert className="w-4 h-4 text-amber-500" />
+            <AlertCircle className="w-4 h-4 text-amber-500" />
             <span>{tryExamplesTexts[language]}</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
@@ -184,7 +184,7 @@ export default function LandingPage({ onAnalyze, loading, language }) {
                   }`}>
                     <span>{pillTitle}</span>
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity text-[10px] uppercase font-semibold underline">
-                      Try ->
+                      Try &rarr;
                     </span>
                   </span>
                   <span className="text-[11px] text-slate-600 line-clamp-2 leading-snug">
