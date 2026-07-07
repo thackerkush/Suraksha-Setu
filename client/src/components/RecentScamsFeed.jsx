@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Radio, RefreshCw, CheckCircle2, ShieldAlert, PlusCircle, X, Check, Filter } from 'lucide-react';
 
-export default function RecentScamsFeed({ language, onEarnXP }) {
+export default function RecentScamsFeed({ language = 'en', onEarnXP }) {
   const [scams, setScams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
@@ -23,10 +23,15 @@ export default function RecentScamsFeed({ language, onEarnXP }) {
         throw new Error(`Server status: ${response.status}`);
       }
       const data = await response.json();
-      setScams(data);
+      // Safely handle both array response and { recent_scams: [...] } object response
+      const scamsList = Array.isArray(data) 
+        ? data 
+        : (Array.isArray(data?.recent_scams) ? data.recent_scams : []);
+      setScams(scamsList);
     } catch (err) {
       console.error("Failed to fetch recent scams:", err);
       setError("Unable to load community feed.");
+      setScams([]);
     } finally {
       setLoading(false);
     }
@@ -74,9 +79,13 @@ export default function RecentScamsFeed({ language, onEarnXP }) {
 
   const categories = ['ALL', 'UPI Fraud', 'Phishing Link', 'Digital Arrest', 'Lottery Scam', 'Predatory Loan'];
 
+  const safeScams = Array.isArray(scams) ? scams : [];
   const filteredScams = selectedCategory === 'ALL' 
-    ? scams 
-    : scams.filter(s => s.category.toLowerCase().includes(selectedCategory.toLowerCase()) || selectedCategory.toLowerCase().includes(s.category.toLowerCase()));
+    ? safeScams 
+    : safeScams.filter(s => {
+        const cat = s?.category || '';
+        return cat.toLowerCase().includes(selectedCategory.toLowerCase()) || selectedCategory.toLowerCase().includes(cat.toLowerCase());
+      });
 
   const labels = {
     title: {
@@ -228,24 +237,24 @@ export default function RecentScamsFeed({ language, onEarnXP }) {
                 <div className="space-y-1.5 flex-1">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider ${
-                      scam.verdict === 'SCAM' 
+                      scam?.verdict === 'SCAM' || scam?.verdict === 'Scam'
                         ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800' 
                         : 'bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800'
                     }`}>
-                      {scam.verdict}
+                      {scam?.verdict || "Scam"}
                     </span>
                     <span className="text-xs font-bold text-trust-700 dark:text-trust-400 bg-trust-50 dark:bg-trust-950/40 px-2 py-0.5 rounded-md border border-trust-200 dark:border-trust-800">
-                      {scam.category}
+                      {scam?.category || "Financial Fraud"}
                     </span>
                   </div>
                   <p className="text-xs sm:text-sm font-medium text-slate-800 dark:text-slate-200 leading-snug line-clamp-2">
-                    "{scam.snippet}"
+                    "{scam?.snippet || ""}"
                   </p>
                 </div>
 
                 <div className="text-right flex-shrink-0 w-full sm:w-auto flex sm:flex-col justify-between sm:justify-end items-center sm:items-end pt-2 sm:pt-0 border-t sm:border-0 border-slate-200 dark:border-slate-700">
                   <span className="text-[11px] font-bold text-slate-400 dark:text-slate-500">
-                    {scam.timestamp || "Just now"}
+                    {scam?.timestamp || "Just now"}
                   </span>
                   <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
                     <CheckCircle2 className="w-3 h-3" />

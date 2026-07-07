@@ -1,7 +1,9 @@
 import React from 'react';
 import { Award, Zap, Trophy, Shield } from 'lucide-react';
 
-export default function XPBadge({ xp, language, lastEarned }) {
+export default function XPBadge({ xp = 0, language = 'en', lastEarned }) {
+  const safeXP = Number.isFinite(xp) && !isNaN(xp) ? Number(xp) : 0;
+
   // Determine Level and Title based on XP
   const getLevelInfo = (currentXP) => {
     if (currentXP < 100) {
@@ -44,9 +46,9 @@ export default function XPBadge({ xp, language, lastEarned }) {
     };
   };
 
-  const levelInfo = getLevelInfo(xp);
+  const levelInfo = getLevelInfo(safeXP);
   const prevThreshold = levelInfo.level === 1 ? 0 : (levelInfo.level === 2 ? 100 : (levelInfo.level === 3 ? 300 : 600));
-  const progressPercent = Math.min(100, Math.max(0, ((xp - prevThreshold) / (levelInfo.nextXP - prevThreshold)) * 100));
+  const progressPercent = Math.min(100, Math.max(0, ((safeXP - prevThreshold) / (levelInfo.nextXP - prevThreshold)) * 100));
 
   const labels = {
     lvl: { en: "Lvl", hi: "स्तर", gu: "સ્તર" },
@@ -73,7 +75,7 @@ export default function XPBadge({ xp, language, lastEarned }) {
       {/* XP Bar & Count */}
       <div className="flex flex-col min-w-[70px] sm:min-w-[90px]">
         <div className="flex justify-between items-center text-[10px] font-extrabold text-slate-600 dark:text-slate-300 leading-none mb-1">
-          <span>{xp} <span className="font-normal text-slate-400 dark:text-slate-500">{labels.xp[language]}</span></span>
+          <span>{safeXP} <span className="font-normal text-slate-400 dark:text-slate-500">{labels.xp[language]}</span></span>
           <span className="text-slate-400 dark:text-slate-500">{levelInfo.nextXP}</span>
         </div>
         <div className="w-full h-1.5 bg-slate-100 dark:bg-slate-700 rounded-full overflow-hidden border border-slate-200/50 dark:border-slate-600">

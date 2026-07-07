@@ -34,16 +34,18 @@ export default function App() {
     setThemeMode((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  // Gamification XP State with localStorage persistence
+  // Gamification XP State with localStorage persistence and bulletproof NaN protection
   const [xp, setXp] = useState(() => {
     const saved = localStorage.getItem('suraksha_xp');
-    return saved ? parseInt(saved, 10) : 0;
+    const parsed = saved ? parseInt(saved, 10) : 0;
+    return Number.isFinite(parsed) && !isNaN(parsed) ? parsed : 0;
   });
   const [lastEarned, setLastEarned] = useState(null);
 
   const handleEarnXP = (amount, reason) => {
     setXp((prev) => {
-      const nextXP = prev + amount;
+      const current = Number.isFinite(prev) && !isNaN(prev) ? prev : 0;
+      const nextXP = current + amount;
       localStorage.setItem('suraksha_xp', nextXP.toString());
       return nextXP;
     });
